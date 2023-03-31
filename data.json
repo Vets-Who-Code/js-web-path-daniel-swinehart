@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "first_name": "Kimmi",
+    "last_name": "Siddens",
+    "email": "ksiddens0@nydailynews.com",
+    "gender": "Female"
+  },
+  {
+    "id": 2,
+    "first_name": "Dur",
+    "last_name": "Faye",
+    "email": "dfaye1@unicef.org",
+    "gender": "Agender"
+  },
+  {
+    "id": 3,
+    "first_name": "Dudley",
+    "last_name": "Pickover",
+    "email": "dpickover2@pbs.org",
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "first_name": "Sigismondo",
+    "last_name": "Rider",
+    "email": "srider3@liveinternet.ru",
+    "gender": "Male"
+  },
+  {
+    "id": 5,
+    "first_name": "Annalee",
+    "last_name": "Suddock",
+    "email": "asuddock4@360.cn",
+    "gender": "Female"
+  }
+]
