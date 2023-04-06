@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    animation: pageDisplay 2s linear;
+}
+
 .nav-bar-container {
     display: flex;
     justify-content: center;
@@ -18,7 +22,7 @@
     box-shadow: 8px 8px 15px black;
     border-radius: 10px;
     text-align: center;
-    transition: background-color 0.5s linear;  
+    transition: background-color 0.5s linear;
 }
 
 .nav-bar-btn:hover {
@@ -61,6 +65,11 @@
     margin: 1em;
     border: solid 1px black;
 
+}
+
+@keyframes pageDisplay {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 /* Media Queries*/
