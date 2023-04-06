@@ -17,11 +17,12 @@
     border: 2px solid black;
     box-shadow: 8px 8px 15px black;
     border-radius: 10px;
-    text-align: center;   
+    text-align: center;
+    transition: background-color 0.5s linear;  
 }
 
 .nav-bar-btn:hover {
-    
+    background-color: blue;
 }
 
 .hero-container {
