@@ -85,7 +85,7 @@ p {
     transition: color 0.5s linear;
 }
 
-.nav-bar-container__btn:hover {
+.nav-btn-container__btn:hover {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
 }
@@ -176,21 +176,21 @@ p {
         grid-template-columns: repeat(8, 1fr);
     }
 
-    /* Index page styles */
-
-   
-
-    /* Projects page styles */
-    .hero-container-project {
+    .div--display-none {
         display: none;
     }
 
-    .grid-container-project {
+    .grid-container--bg-img {
         background-image: url("/issue4/images/cockpit-instruments-banner.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    /* Index page styles */
+
+   
+
+    /* Projects page styles */
     .grid-item-project-1 {
         grid-column: 1 / span 4;
     }
@@ -225,6 +225,15 @@ p {
         grid-template-columns: repeat(12, 1fr);
     }
 
+    .div--display-none {
+        display: none;
+    }
+
+    .grid-container--bg-img {
+        background-image: url("/issue4/images/cockpit-instruments-banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
      
     /* Index page styles */
     .hero-container__img {
@@ -232,16 +241,6 @@ p {
     }
 
     /* Projects page styles */
-    .hero-container-project {
-        display: none;
-    }
-
-    .grid-container-project {
-        background-image: url("/issue4/images/cockpit-instruments-banner.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     .grid-item-project-1 {
         grid-column: 1 / span 4;
     }

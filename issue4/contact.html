@@ -10,27 +10,78 @@
 <body>
     <header>
         <nav class="nav-bar-container">
-            <a href="/issue4/index.html">
-                <button class="nav-bar-container__btn">Home</button>
-            </a>    
-            <a href="/issue4/projects.html">
-                <button class="nav-bar-container__btn">Projects</button>
-            </a>
-            <a href="/issue4/about.html">
-                <button class="nav-bar-container__btn">About</button>
-            </a>
+            <div class="logo-container div--bg-grey">
+                <p>Logo</p>
+            </div>
+            <div class="nav-btn-container">
+                <a href="/issue4/index.html">
+                    <button class="nav-btn-container__btn">Home</button>
+                </a>
+                <a href="/issue4/projects.html">
+                    <button class="nav-btn-container__btn">Projects</button>
+                </a>
+                <a href="/issue4/about.html">
+                    <button class="nav-btn-container__btn">About</button>
+                </a>
+            </div>
         </nav>
     </header>
     <!--Hero Image-->
-    <div class="hero-container">
+    <div class="hero-container div--display-none">
         <img class="hero-container__img" src="/issue4/images/cockpit-instruments-banner.jpg">
     </div>
     <!--Contact Section-->
-    <div class="grid-container">
-        <section class="grid-item">
+    <section class="grid-container grid-container--bg-img">
+        <div class="grid-item">
             <p>contact form/address/map</p>
-        </section>
-    </div>
+        </div>
+        <div class="grid-item">
+            <a href="#">
+                <button class="nav-btn-container__btn">GitHub</button>
+            </a>
+            <a href="#">
+                <button class="nav-btn-container__btn">LinkedIn</button>
+            </a>
+            <a href="#">
+                <button class="nav-btn-container__btn">Twitter</button>
+            </a>
+            <a href="#">
+                <button class="nav-btn-container__btn">Instagram</button>
+            </a>
+            <a href="#">
+                <button class="nav-btn-container__btn">Facebook</button>
+            </a>
+        </div>
+    </section>
+    <section class="grid-container">
+        <div class="grid-item div--bg-grey">
+            <p>Google Map</p>
+        </div>
+        <address class="grid-item div--bg-gey">
+            <p>Address/Telephone/email</p>
+        </address>
+        <div class="grid-item div--bg-grey">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
+                <br>
+                <label for="email-address">Email</label>
+                <input type="email" name="email-address" id="email-address" placeholder="name@domain.com" required>
+                <br>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" required>
+                    <option value="work" selected>Work Inquiry</option>
+                    <option value="social">Social Networking</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+                <label for="message">Message</label>
+                <input type="textarea" name="message" id="message" placeholder="Your message here" required>
+                <br>
+                <button name="submit">Submit</button>
+            </form>
+        </div>
+    </section>
     <!--Footer section-->
     <footer><p><small>Some small text in this footer</small></p></footer>
 </body>
