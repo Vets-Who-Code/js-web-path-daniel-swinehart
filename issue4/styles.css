@@ -11,13 +11,17 @@ body {
     background-color: rgba(217, 217, 217, 100%);
 }
 
+.div--bg-grey {
+    background-color:rgba(109, 103, 93, 100%); 
+}
+
 .img--opacity-0_5 {
     opacity: 0.5;
 }
 
 .text-summary {
     text-align: center;
-    padding: 2em;
+    padding: 0.5em;
 }
 
 /* Site nav bar styles */
@@ -27,19 +31,36 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 4em;
+    height: 2em;
     background-color: rgba(44, 84, 114, 100%);
 }
 
-.nav-bar-container__btn {
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0.2em;
+}
+
+.nav-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    background-color: rgba(44, 84, 114, 100%);
+}
+
+.nav-btn-container__btn {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.3em;
     margin: 0.5em;
     border: 1px solid rgba(109, 103, 93, 100%);
     background-color:rgba(217, 217, 217, 100%);
     border-radius: 5px;
     box-shadow: 4px 4px 10px black;
-    font-size: 0.75em;
+    font-size: 0.70em;
     text-align: center;
     transition: background-color 0.5s linear;
     transition: color 0.5s linear;
@@ -63,6 +84,7 @@ body {
     justify-content: center;
     align-items: center;
     grid-column: 1 / span 4;
+    border: 1px solid black;
 }
 
 /* Site hero styles */
@@ -112,14 +134,25 @@ body {
 /* Media Queries*/
 @media (min-width: 481px) {
     /* Site nav bar styles */
-    .nav-bar-container {
+    .nav-btn-container {
         justify-content: flex-end;
     }
     
-    /* Projects page styles */
     .grid-container {
         grid-template-columns: repeat(8, 1fr);
     }
+
+    /* Index page styles */
+
+    .grid-item-summary {
+        grid-column: 2 / span 6;
+    }
+
+    .grid-item-rss {
+        grid-column: 2 / span 6;
+    }
+
+    /* Projects page styles */
 
     .grid-item-project-1 {
         grid-column: 1 / span 4;
@@ -136,13 +169,36 @@ body {
 
 @media (min-width: 768px) {
     /* Site nav bar styles */
-    .nav-bar-container {
+    .nav-btn-container {
         justify-content: flex-end;
     }
     
-    /* Projects page styles */
     .grid-container {
         grid-template-columns: repeat(12, 1fr);
+    }
+
+     
+    /* Index page styles */
+    .hero-container__img {
+        width: 80%;
+    }
+
+    .grid-item-summary {
+        grid-column: 3 / span 8;
+    }
+
+    .grid-item-rss {
+        grid-column: 4 / span 6;
+    }
+
+    /* Projects page styles */
+
+    .hero-container-project {
+        display: none;
+    }
+
+    .grid-container-project {
+        background-image: url("/issue4/images/cockpit-instruments.jpg");
     }
 
     .grid-item-project-1 {
@@ -155,19 +211,5 @@ body {
     
     .grid-item-project-3 {
         grid-column: 9 / span 4;
-    }
- 
-    /* Index page styles */
-    .hero-container__img {
-        width: 80%;
-    }
-
-    /* Project page styles */
-    .hero-container-project {
-        display: none;
-    }
-
-    .grid-container-project {
-        background-image: url("/issue4/images/cockpit-instruments.jpg");
     }
 }
