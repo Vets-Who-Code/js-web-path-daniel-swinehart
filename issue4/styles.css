@@ -58,8 +58,10 @@ p {
     justify-content: center;
     align-items: center;
     padding: 0.2em;
+    width: 10em;
     height: 1.8em;
     font-size: 0.70em;
+    border-radius: 10px;
 }
 
 .nav-btn-container {
@@ -103,11 +105,6 @@ p {
     justify-content: center;
     align-items: center;
     grid-column: 1 / span 4;
-}
-
-.grid-item--flex-row {
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 /* Site hero styles */
@@ -168,8 +165,21 @@ p {
 /* Contact page styles */
 
 .contact-heading {
-    margin: 4em;
+    margin: 1em;
     color: white;
+}
+
+.location-map {
+    margin: 1em;
+    height: 12em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.grid-container--bg-img-mobile {
+    background-image: url("/issue4/images/cockpit-instruments-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @keyframes pageDisplay {
@@ -228,6 +238,8 @@ p {
 
     /* Contact page styles */
     .grid-item--flex-row {
+        flex-direction: row;
+        justify-content: space-evenly;
         grid-column: 1 / span 8;
     }
 
