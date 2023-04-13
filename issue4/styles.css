@@ -177,7 +177,7 @@ p {
 }
 
 .grid-container--bg-img-mobile {
-    background-image: url("/images/cockpit-instruments-banner.jpg");
+    background-image: url("images/cockpit-instruments-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -203,7 +203,7 @@ p {
     }
 
     .grid-container--bg-img {
-        background-image: url("/images/cockpit-instruments-banner.jpg");
+        background-image: url("images/cockpit-instruments-banner.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -267,7 +267,7 @@ p {
     }
 
     .grid-container--bg-img {
-        background-image: url("/images/cockpit-instruments-banner.jpg");
+        background-image: url("images/cockpit-instruments-banner.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
