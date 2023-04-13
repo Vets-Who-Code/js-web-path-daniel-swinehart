@@ -88,21 +88,17 @@ p {
     cursor: pointer;
 }
 
+.nav-btn-container__link {
+    cursor: default;
+}
+
 .nav-btn-container__btn:hover {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
 }
 
-.about-page .nav-bar-container .nav-btn-container .about-page {
-    background-color: rgba(109, 103, 93, 100%);
-    color: white;
-}
-
-.project-page .nav-bar-container .nav-btn-container .project-page {
-    background-color: rgba(109, 103, 93, 100%);
-    color: white;
-}
-
+.about-page .nav-bar-container .nav-btn-container .about-page,
+.project-page .nav-bar-container .nav-btn-container .project-page,
 .contact-page .nav-bar-container .nav-btn-container .contact-page {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
@@ -133,8 +129,9 @@ p {
 }
 
 .hero-container__img {
-    display: block;
+    height: 15em;
     width: 100%;
+    object-fit: cover;
 }
 
 /* Index page styles */
@@ -289,9 +286,6 @@ p {
     }
      
     /* Index page styles */
-    .hero-container__img {
-        width: 80%;
-    }
 
     /* Projects page styles */
     .grid-item-project-1 {
