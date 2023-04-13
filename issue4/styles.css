@@ -85,9 +85,25 @@ p {
     text-align: center;
     transition: background-color 0.5s linear;
     transition: color 0.5s linear;
+    cursor: pointer;
 }
 
 .nav-btn-container__btn:hover {
+    background-color: rgba(109, 103, 93, 100%);
+    color: white;
+}
+
+.about-page .nav-bar-container .nav-btn-container .about-page {
+    background-color: rgba(109, 103, 93, 100%);
+    color: white;
+}
+
+.project-page .nav-bar-container .nav-btn-container .project-page {
+    background-color: rgba(109, 103, 93, 100%);
+    color: white;
+}
+
+.contact-page .nav-bar-container .nav-btn-container .contact-page {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
 }
