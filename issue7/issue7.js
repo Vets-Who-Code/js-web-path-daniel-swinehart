@@ -18,7 +18,11 @@ function removeLi() {
 
 function changeNav() {
     let nav = document.querySelector('.nav-bar-container');
-    nav.classList.toggle('alt-bg-color');
+    if (nav.classList.contains('alt-bg-color')) {
+        nav.classList.remove('alt-bg-color');
+    } else {
+        nav.classList.add('alt-bg-color');
+    }
 };
 
 
