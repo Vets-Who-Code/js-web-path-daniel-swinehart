@@ -87,33 +87,22 @@ p {
     background-color: rgba(33, 150, 243, 100%);
 }
 
-.nav-btn-container__btn {
+.nav-btn-container__link {
     display: inline-block;
-    padding: 0.3em;
     margin: 0.5em;
-    border: 1px solid rgba(109, 103, 93, 100%);
-    background-color:rgba(217, 217, 217, 100%);
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px black;
-    font-size: 0.70em;
-    text-align: center;
-    transition: background-color 0.5s linear;
-    transition: color 0.5s linear;
+    color: white;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.nav-btn-container__link {
-    cursor: default;
-}
-
-.nav-btn-container__btn:hover {
+.nav-btn-container__link:hover {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
 }
 
-.about-page .nav-bar-container .nav-btn-container .about-page,
-.project-page .nav-bar-container .nav-btn-container .project-page,
-.contact-page .nav-bar-container .nav-btn-container .contact-page {
+.about-page .nav-bar .nav-btn-container .about-page,
+.project-page .nav-bar .nav-btn-container .project-page,
+.contact-page .nav-bar .nav-btn-container .contact-page {
     background-color: rgba(109, 103, 93, 100%);
     color: white;
 }
