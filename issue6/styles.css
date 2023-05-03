@@ -11,8 +11,15 @@ body {
     background-color: rgba(217, 217, 217, 100%);
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .div--bg-grey {
@@ -27,11 +34,6 @@ p {
     opacity: 0.5;
 }
 
-.text-summary {
-    text-align: center;
-    padding: 0.5em;
-}
-
 .page-bottom-banner {
     display: flex;
     flex-direction: column;
@@ -41,12 +43,11 @@ p {
     padding: 1.5em;
 }
 
-.index-page {
+.home-page {
     display: Flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 
 .page-content {
@@ -103,8 +104,7 @@ p {
 .about-page .nav-bar .nav-btn-container .about-page,
 .project-page .nav-bar .nav-btn-container .project-page,
 .contact-page .nav-bar .nav-btn-container .contact-page {
-    background-color: rgba(109, 103, 93, 100%);
-    color: white;
+    border-bottom: 3px solid white;
 }
 
 /* Site grid styles */
@@ -124,7 +124,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / span 4;
 }
 
 /* Site hero styles */
@@ -270,15 +269,18 @@ p {
     }
 }
 
+/*--------------------------------------------------------------------- */
 @media (min-width: 768px) {
     .page-content {
         max-width: 1440px;
     }
 
+
     /* Site nav bar styles */
     .page-header{
         Display: flex;
         grid-column: 1 / span 12;
+        grid-row: 1 / span 2;
     }
 
     .nav-bar {
@@ -287,6 +289,8 @@ p {
     
     .grid-container {
         grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+
     }
 
     .div--display-none {
@@ -294,13 +298,33 @@ p {
     }
 
     .grid-container--bg-img {
-        background-image: url("images/scenic-rock-greyscale.jpg");
+        background-image: url("images/scenic-rock-greyscale2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
      
     /* Index page styles */
+
+    .main-heading {
+        font-size: 40px;
+    }
     
+    .index-about-me {
+        align-items: flex-start;
+        text-align: left;
+        grid-column: 3 / span 5;
+        grid-row: 4 / span 4;
+    }
+
+    .text-summary {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .home-footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
 
     /* Projects page styles */
     .grid-item-project-1 {
