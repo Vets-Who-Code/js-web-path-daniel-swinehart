@@ -34,7 +34,7 @@ p {
     opacity: 0.5;
 }
 
-.container--flex {
+.flex-container {
     display: Flex;
     flex-direction: column;
     justify-content: center;
@@ -276,18 +276,17 @@ p {
         border-radius: 5px;
         background-color: rgba(25, 118, 210, 100%);
     }
-    
-    .grid-container {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-
-    }
 
     .div--display-none {
         display: none;
     }
 
     /* Index page styles */
+
+    .grid-container--12x12 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 
     .home-pg-bg {
         background-image: url("images/scenic-rock-greyscale2.jpg");
@@ -320,6 +319,11 @@ p {
     }
 
     /* Projects page styles */
+
+    .grid-container--12x6 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
     .project-pg-hero {
         background-image: url("images/project-hero-greyscale.jpg");
         background-position: center;
