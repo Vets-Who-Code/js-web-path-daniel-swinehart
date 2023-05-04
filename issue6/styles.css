@@ -101,6 +101,7 @@ p {
 
 .grid-container {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -278,6 +279,21 @@ p {
         background-color: rgba(25, 118, 210, 100%);
     }
 
+    .grid-container--12x12 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .grid-container--12x5 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .grid-container--12x4 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
     .full-pg-hero-footer {
         grid-column: 1 / span 12;
         grid-row: 12 / span 1;
@@ -288,11 +304,6 @@ p {
     }
 
     /* Index page styles */
-
-    .grid-container--12x12 {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-    }
 
     .home-pg-bg {
         background-image: url("images/scenic-rock-greyscale2.jpg");
@@ -320,11 +331,6 @@ p {
     }
 
     /* Projects page styles */
-
-    .grid-container--12x5 {
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
 
     .project-pg-hero {
         background-image: url("images/project-hero-greyscale.jpg");
