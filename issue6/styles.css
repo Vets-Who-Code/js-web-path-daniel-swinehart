@@ -34,6 +34,14 @@ p {
     opacity: 0.5;
 }
 
+.container--flex {
+    display: Flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .page-bottom-banner {
     display: flex;
     flex-direction: column;
@@ -41,13 +49,6 @@ p {
     align-items: center;
     margin: 0;
     padding: 1.5em;
-}
-
-.home-page {
-    display: Flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 /* Site nav bar styles */
@@ -61,18 +62,6 @@ p {
     height: 2em;
     padding: 0.1em;
     background-color: rgba(33, 150, 243, 100%);
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2em;
-    width: 10em;
-    height: 1.8em;
-    font-size: 0.70em;
-    border-radius: 10px;
-    background-color: rgba(25, 118, 210, 100%);
 }
 
 .nav-btn-container {
@@ -128,7 +117,12 @@ p {
 
 /* Index page styles */
 
-
+.twitter-feed {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    margin-top: 2em;
+}
 
 /* Projects page styles */
 
@@ -256,16 +250,10 @@ p {
 
 /*--------------------------------------------------------------------- */
 @media (min-width: 768px) {
-    .page-background {
+    
+    .page-content {
         max-width: 1440px;
-        background-image: url("images/scenic-rock-greyscale2.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
     }
-
-
     /* Site nav bar styles */
     .page-header{
         Display: flex;
@@ -275,6 +263,18 @@ p {
 
     .nav-bar {
         background-color: rgba(33, 150, 243, 0%);
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em;
+        width: 8em;
+        height: 8em;
+        font-size: 0.70em;
+        border-radius: 5px;
+        background-color: rgba(25, 118, 210, 100%);
     }
     
     .grid-container {
@@ -289,15 +289,24 @@ p {
 
     /* Index page styles */
 
+    .home-pg-bg {
+        background-image: url("images/scenic-rock-greyscale2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .main-heading {
         font-size: 40px;
     }
     
     .index-about-me {
+        justify-content: flex-start;
         align-items: flex-start;
         text-align: left;
-        grid-column: 3 / span 5;
-        grid-row: 4 / span 4;
+        grid-column: 2 / span 5;
+        grid-row: 4 / span 8;
     }
 
     .text-summary {
@@ -311,16 +320,27 @@ p {
     }
 
     /* Projects page styles */
+    .project-pg-hero {
+        background-image: url("images/project-hero-greyscale.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .grid-item-project-1 {
-        grid-column: 1 / span 4;
+        grid-column: 2 / span 3;
+        grid-row: 2 / span 4;
     }
     
     .grid-item-project-2 {
-        grid-column: 5 / span 4;
+        grid-column: 5 / span 3;
+        grid-row: 2 / span 4;
     }
     
     .grid-item-project-3 {
-        grid-column: 9 / span 4;
+        grid-column: 8 / span 3;
+        grid-row: 2 / span 4;
     }
 
     /* About page styles */
