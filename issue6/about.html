@@ -7,27 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <title>About</title>
 </head>
-<body class="about-page">
-    <header>
-        <nav class="nav-bar-container">
-            <div class="logo-container div--bg-grey">
-                <a href="index.html">Site Logo</a>
-            </div>
-            <div class="nav-btn-container">
-                <a href="about.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn about-page">About</button>
-                </a>
-                <a href="projects.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn project-page">Projects</button>
-                </a>
-                <a href="contact.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn contact-page">Contact</button>
-                </a>
-            </div>
-        </nav>
-    </header>
-    <!--About Me Section-->
-    <div class="grid-container">
+<body class="about-page flex-container">
+    <main class="page-content grid-container grid-container--12x12 about-pg-bg">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="logo-container">
+                    <a href="index.html">Site Logo</a>
+                </div>
+                <div class="nav-btn-container">
+                    <a href="about.html" class="nav-btn-container__link about-page">About</a>
+                    <a href="projects.html" class="nav-btn-container__link project-page">Projects</a>
+                    <a href="contact.html" class="nav-btn-container__link contact-page">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <!--About Me Section-->
         <section class="grid-item grid-item-profile">
             <div class="profile-img-container div--bg-shape-round div--bg-grey">
                 <p>Profile Pic</p>
@@ -42,8 +36,8 @@
                 <p>Slide show of travels here</p>
             </div>
         </section>
-    </div>
-    <!--Footer section-->
-    <footer><p class="text-summary"><small>Some small text in this footer</small></p></footer>
+        <!--Footer section-->
+        <footer class="grid-item full-pg-hero-footer"><p class="text-summary"><small>Some small text in this footer</small></p></footer>
+    </main>
 </body>
 </html>

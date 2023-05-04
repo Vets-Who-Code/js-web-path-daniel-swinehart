@@ -157,8 +157,9 @@ p {
 }
 
 .slideshow-container {
-    width: 12em;
+    width: 90%;
     height: 12em;
+    margin: 2em;
 }
 
 /* Contact page styles */
@@ -277,6 +278,11 @@ p {
         background-color: rgba(25, 118, 210, 100%);
     }
 
+    .full-pg-hero-footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
+
     .div--display-none {
         display: none;
     }
@@ -313,11 +319,6 @@ p {
         text-align: left;
     }
 
-    .home-footer {
-        grid-column: 1 / span 12;
-        grid-row: 12 / span 1;
-    }
-
     /* Projects page styles */
 
     .grid-container--12x6 {
@@ -348,14 +349,25 @@ p {
     }
 
     /* About page styles */
+
+    .about-pg-bg {
+        background-image: url("images/globe-hero-greyscale.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .grid-item-profile {
-        grid-column: 1 / span 6;
-        padding: 5em;
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 6;
     }
 
     .grid-item-about {
-        grid-column: 7 / span 6;
-        padding: 5em;
+        grid-column: 6 / span 6;
+        grid-row: 3 / span 8;
+        padding: 1em;
+        background-color: white;
     }
 
     /* Contact page styles */
