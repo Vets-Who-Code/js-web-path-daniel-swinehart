@@ -321,10 +321,11 @@ p {
 
     /* Projects page styles */
 
-    .grid-container--12x6 {
+    .grid-container--12x5 {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
+
     .project-pg-hero {
         background-image: url("images/project-hero-greyscale.jpg");
         background-position: center;
@@ -371,6 +372,15 @@ p {
     }
 
     /* Contact page styles */
+
+    .contact-pg-hero {
+        background-image: url("images/contact-hero-1-greyscale2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
     .grid-item--flex-row {
         grid-column: 1 / span 12;
     }
