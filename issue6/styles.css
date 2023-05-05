@@ -293,12 +293,14 @@ p {
 
     .grid-footer {
         flex-direction: row;
+        align-items: center;
         grid-column: 1 / span 12;
         grid-row: 12 / span 1;
     }
 
     .flex-footer {
         flex-direction: row;
+        margin: 1em;
     }
 
     .div--display-none {
