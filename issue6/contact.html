@@ -52,17 +52,14 @@
                 <form class="email-form">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="John Doe" required>
-                    <br>
                     <label for="email-address">Email</label>
                     <input type="email" name="email-address" id="email-address" placeholder="name@domain.com" required>
-                    <br>
                     <label for="subject">Subject</label>
                     <select name="subject" id="subject" required>
                         <option value="work" selected>Work Inquiry</option>
                         <option value="social">Social Networking</option>
                         <option value="other">Other</option>
                     </select>
-                    <br>
                     <label for="message">Message</label>
                     <input type="textarea" name="message" id="message" placeholder="Your message here" required>
                     <br>
@@ -73,11 +70,25 @@
                 <p>Google Map</p>
             </div>
             <address class="grid-item contact-info">
-                <p>5555 MyStreetName St NE<br>SomeTown, USA 99999<br>+1(555)555-5555</p>
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/location-dot-solid.svg">
+                    <p>5555 MyStreetName St NE<br>SomeTown, USA 99999</p>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/envelope-solid.svg">
+                    <p>d4570s@gmail.com</p>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/phone-solid.svg">
+                    <p>+1(555)555-5555</p>
+                </div>
             </address>
         </section>
         <!--Footer section-->
-        <footer><p><small>Some small text in this footer</small></p></footer>
+        <footer class="grid-item grid-footer">
+            <img class="my-logo"src="#sitelogo">
+            <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
+        </footer>
     </main>
 </body>
 </html>
