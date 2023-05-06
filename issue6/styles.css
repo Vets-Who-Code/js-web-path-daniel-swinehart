@@ -49,7 +49,7 @@ p {
     align-items: center;
     margin: 0;
     padding: 1.5em;
-    width: 50%;
+    width: 90%;
 }
 
 .page-content {
@@ -75,6 +75,7 @@ p {
     height: 2em;
     padding: 0.1em;
     background-color: rgba(33, 150, 243, 100%);
+    z-index: 1;
 }
 
 .my-logo {
@@ -161,13 +162,29 @@ p {
 
 /* Projects page styles */
 
+.project-pg-hero {
+    background-image: url("images/project-hero-greyscale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / span 4;
+    margin-top: 4em;
+}
+
 .grid-item-project {
     margin: 1em;
     padding: 0.5em;
     color: white;
-    background-color: rgba(109, 103, 93, 100%);
-    border: solid 1px black;
-    border-radius: 5px;
+    background-color: rgba(25, 118, 210, 100%);
+    border-radius: 2px;
 }
 
 .project-img-container {
@@ -177,7 +194,7 @@ p {
     background-color: white;
     color: black;
     border: 1px solid black;
-    z-index: 0;
+    border-radius: 2px;
 }
 
 /* About page styles */
@@ -308,16 +325,13 @@ p {
     }
 
     /* Projects page styles */
-    .grid-item-project-1 {
-        grid-column: 1 / span 4;
-    }
     
-    .grid-item-project-2 {
-        grid-column: 5 / span 4;
-    }
-    
-    .grid-item-project-3 {
-        grid-column: 3 / span 4;
+    .project-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-column: 1 / span 8;
+        margin-top: 4em;
     }
 
     /* About page styles */
@@ -434,16 +448,9 @@ p {
 
     .project-pg-hero {
         background-image: url("images/project-hero-greyscale.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
     }
 
     .project-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
         grid-column: 1 / span 12;
         grid-row: 2/ span 4;
     }
