@@ -261,12 +261,12 @@ p {
 .email-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 }
 
 .location-map {
-    height: 10em;
+    height: 15em;
     margin: 1em;
     border: 1px solid black;
     border-radius: 2px;
@@ -365,6 +365,11 @@ p {
         grid-template-rows: repeat(4, 1fr);
     }
 
+    .grid-container--8x3 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
     .div--display-none {
         display: none;
     }
@@ -432,10 +437,46 @@ p {
     }
 
     /* Contact page styles */
-    .contact-social-links {
-        flex-direction: row;
-        justify-content: space-evenly;
+
+    .contact-heading-container {
         grid-column: 1 / span 8;
+        text-align: center;
+    }
+    
+    .contact-heading {
+        margin: 2em 1em 1em 1em;
+    }
+    
+    .social-links-container {
+        grid-column: 1 / span 8;
+    }
+    
+    .social-link-img {
+        width: 3em;
+    }
+    
+    .email-form-container {
+        grid-row: 1 / span 2;   
+    }
+    
+    .location-map {
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 2;
+    }
+    
+    .contact-info {
+        grid-column: 3 / span 4;
+        grid-row: 3 / span 2;
+    }
+    
+    .contact-detail {
+        margin: 5px;
+    }
+    
+    .contact-icons {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
     }
 
     /* Footer styles */
@@ -570,29 +611,19 @@ p {
     }
 
     .email-form-container {
-        grid-column: 9 / span 4;
+        grid-column: 1 / span 4;
         grid-row: 1 / span 4;
-        margin: 2em;
         padding: 1em;  
     }
 
-    .email-form {
-        display: flex;
-        flex-direction: column;
-    }
-
     .location-map {
-        grid-column: 1 / span 4;
+        grid-column: 9 / span 4;
         grid-row: 1 / span 4; 
-        margin: 2em;
-        border: 1px solid black;
-        border-radius: 2px;
     }
 
     .contact-info {
         grid-column: 5 / span 4;
         grid-row: 1 / span 4; 
-        margin: 2em;
     }
 
     .contact-detail {
@@ -601,11 +632,5 @@ p {
         justify-content: left;
         align-items: center;
         margin: 5px;
-    }
-
-    .contact-icons {
-        width: 30px;
-        height: 30px;
-        margin: 10px;
     }
 }
