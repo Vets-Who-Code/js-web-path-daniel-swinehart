@@ -30,14 +30,10 @@ p {
     border-radius: 50%;
 }
 
-.img--opacity-0_5 {
-    opacity: 0.5;
-}
-
 .flex-container {
     display: Flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
@@ -170,21 +166,16 @@ p {
     position: relative;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / span 4;
-    margin-top: 4em;
-}
-
 .grid-item-project {
     margin: 1em;
     padding: 0.5em;
     color: white;
     background-color: rgba(25, 118, 210, 100%);
     border-radius: 2px;
+}
+
+.grid-item-project-1 {
+    margin-top: 4em;
 }
 
 .project-img-container {
@@ -231,9 +222,72 @@ p {
 
 /* Contact page styles */
 
+.contact-pg-hero {
+    background-image: url("images/contact-hero-1-greyscale2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-heading-container {
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
 .contact-heading {
-    margin: 1em;
+    margin: 4em 1em 1em 1em;
     color: white;
+}
+
+.social-links-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.social-link-img {
+    width: 2em;
+}
+
+.email-form-container {
+    height: 15em;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(33, 150, 243, 100%);
+    border-radius: 2px;   
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-map {
+    height: 10em;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.contact-info {
+    margin: 1em;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 3px;
+}
+
+.contact-icons {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
 }
 
 /* Site Footer styles */
@@ -243,6 +297,11 @@ p {
     height: 2em;
     position: absolute;
     bottom: 0;
+}
+
+.flex-footer {
+    flex-direction: row;
+    margin: 1em;
 }
 
 .footer-content {
@@ -291,6 +350,11 @@ p {
         margin-left: 3em;
     }
     
+    .grid-container--8x7 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
     .grid-container--8x5 {
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -326,12 +390,20 @@ p {
 
     /* Projects page styles */
     
-    .project-container {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        grid-column: 1 / span 8;
-        margin-top: 4em;
+    .grid-item-project-1 {
+        margin: 1em;
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-2 {
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-3 {
+        grid-column: 3 / span 4;
+        grid-row: 5 / span 3;
     }
 
     /* About page styles */
@@ -410,11 +482,6 @@ p {
         grid-row: 12 / span 1;
     }
 
-    .flex-footer {
-        flex-direction: row;
-        margin: 1em;
-    }
-
     .my-logo {
         width: 40px;
         height: 40px;
@@ -450,9 +517,19 @@ p {
         background-image: url("images/project-hero-greyscale.jpg");
     }
 
-    .project-container {
-        grid-column: 1 / span 12;
-        grid-row: 2/ span 4;
+    .grid-item-project-1 {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-2 {
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-3 {
+        grid-column: 9 / span 4;
+        grid-row: 2 / span 3;
     }
 
     /* About page styles */
@@ -478,22 +555,12 @@ p {
 
     /* Contact page styles */
 
-    .contact-pg-hero {
-        background-image: url("images/contact-hero-1-greyscale2.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
     .contact-heading-container {
         grid-column: 1 / span 12;
         grid-row: 2 / Span 1;
     }
 
     .social-links-container {
-        flex-direction: row;
-        justify-content: space-evenly;
         grid-column: 1 / span 12;
         grid-row: 4 / span 1;
     }
@@ -506,9 +573,7 @@ p {
         grid-column: 9 / span 4;
         grid-row: 1 / span 4;
         margin: 2em;
-        padding: 1em;
-        background-color: rgba(33, 150, 243, 100%);
-        border-radius: 2px;   
+        padding: 1em;  
     }
 
     .email-form {
