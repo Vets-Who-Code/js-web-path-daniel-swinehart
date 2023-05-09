@@ -17,7 +17,7 @@ function removeLi() {
 };
 
 function changeNav() {
-    let nav = document.querySelector('.nav-bar-container');
+    let nav = document.querySelector('.twitter-feed');
     if (nav.classList.contains('alt-bg-color')) {
         nav.classList.remove('alt-bg-color');
     } else {
@@ -27,7 +27,7 @@ function changeNav() {
 
 
 //**Select <body> element
-let bodyElement = document.querySelector('body');
+let bodyElement = document.querySelector('.index-about-me');
 
 //**Add a list element as a child of the body
 //Create <ul> tag
@@ -38,7 +38,11 @@ bodyElement.appendChild(ulElement);
 
 //**Add 2 buttons as children to the <body> element
 let button1 = document.createElement('button');
+button1.setAttribute('class', 'btn-temp');
 button1.addEventListener('click', addLi);
+button1.innerText = 'Add a list item';
 let button2 = document.createElement('button');
+button2.setAttribute('class', 'btn-temp');
 button2.addEventListener('click', removeLi);
+button2.innerText = 'Remove a list item';
 bodyElement.append(button1, button2);

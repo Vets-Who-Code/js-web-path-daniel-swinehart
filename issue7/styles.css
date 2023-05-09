@@ -52,7 +52,7 @@ p {
     min-height: 100vh;
 }
 
-.page-header{
+.page-header {
     Display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -60,7 +60,19 @@ p {
     grid-column: 1 / span 4;
 }
 
+.alt-bg-color {
+    background-color: red; 
+}
 
+.btn-temp {
+    width: 250px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.new-list {
+    cursor: pointer;
+}
 /* Site nav bar styles */
 
 .nav-bar {
