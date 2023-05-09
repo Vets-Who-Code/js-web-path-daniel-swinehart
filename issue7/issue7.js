@@ -1,9 +1,9 @@
  function addLi() {
     let newList = document.querySelector('.new-list');
     let liElement = document.createElement('li');
-    liElement.innerHTML = "You added a new List Item element";
+    liElement.innerHTML = "You added a new List Item element. Click me!";
     //Event listener to toggle Hero Image on page
-    liElement.addEventListener("click", changeNav);
+    liElement.addEventListener("click", changeBg);
     newList.appendChild(liElement);
 };
 
@@ -16,12 +16,12 @@ function removeLi() {
     }    
 };
 
-function changeNav() {
-    let nav = document.querySelector('.twitter-feed');
-    if (nav.classList.contains('alt-bg-color')) {
-        nav.classList.remove('alt-bg-color');
+function changeBg() {
+    let twitterFeed = document.querySelector('.twitter-feed');
+    if (twitterFeed.classList.contains('alt-bg-color')) {
+        twitterFeed.classList.remove('alt-bg-color');
     } else {
-        nav.classList.add('alt-bg-color');
+        twitterFeed.classList.add('alt-bg-color');
     }
 };
 
