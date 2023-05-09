@@ -1,4 +1,4 @@
-function addLi() {
+ function addLi() {
     let newList = document.querySelector('.new-list');
     let liElement = document.createElement('li');
     liElement.innerHTML = "You added a new List Item element";

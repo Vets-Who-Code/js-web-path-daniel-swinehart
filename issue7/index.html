@@ -5,40 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="issue7.js" defer></script>
+    <script type="text/javascript" src="issue7.js" delay></script>
     <title>Daniel Swinehart</title>
 </head>
-<body class="index-page">
-    <header>
-        <nav class="nav-bar-container">
-            <div class="logo-container div--bg-grey">
-                <a href="index.html">Site Logo</a>
+<body class="home-page flex-container">
+    <main class="page-content grid-container grid-container--8x5 grid-container--12x5 home-pg-bg">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <div class="logo-container">
+                    <a href="index.html">Site Logo</a>
+                </div>
+                <div class="nav-btn-container">
+                    <a href="about.html" class="nav-btn-container__link about-page">About</a>
+                    <a href="projects.html" class="nav-btn-container__link project-page">Projects</a>
+                    <a href="contact.html" class="nav-btn-container__link contact-page">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <!--About Me Summary Section-->
+        <section class="grid-item index-about-me">
+            <h1 class="main-heading">Hi there! My name is Daniel.</h1>
+            <p class="text-summary">Web development is where my passions for problem-solving and creativity intersect. I'm fascinated by the constant evolution of technology and web development, and I'm constantly challenging myself to learn new techniques and tools.</p>
+            <div class="twitter-feed div--bg-grey">
+                <p>This is where the RSS feed will go</p>
             </div>
-            <div class="nav-btn-container">
-                <a href="about.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn about-page">About</button>
-                </a>
-                <a href="projects.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn project-page">Projects</button>
-                </a>
-                <a href="contact.html" class="nav-btn-container__link">
-                    <button class="nav-btn-container__btn contact-page">Contact</button>
-                </a>
+        </section>
+        <!--Footer section-->
+        <footer class="grid-item grid-footer">
+            <div class="footer-content">
+                <img class="my-logo"src="#sitelogo">
+                <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
             </div>
-        </nav>
-    </header>
-    <!--Hero Image-->
-    <div class="hero-container">
-        <img class="hero-container__img" src="images/cockpit-instruments-banner.jpg">
-    </div>
-    <!--About Me Summary Section-->
-    <section class="page-bottom-banner">
-        <p class="text-summary">Hi there! My name is Daniel. Web development is where my passions for problem-solving and creativity intersect. I'm fascinated by the constant evolution of technology and web development, and I'm constantly challenging myself to learn new techniques and tools.</p>
-        <div class="div--bg-grey">
-            <p>This is where the RSS feed will go</p>
-        </div>
-    </section>
-    <!--Footer section-->
-    <footer><p class="text-summary"><small>Some small text in this footer</small></p></footer>
+        </footer>
+    </main>
 </body>
 </html>
