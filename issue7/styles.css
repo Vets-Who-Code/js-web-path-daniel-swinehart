@@ -7,7 +7,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    /*animation: pageDisplay 2s linear; */
     background-color: white;
 }
 
@@ -324,11 +323,6 @@ p {
     align-items: center;
     width: 100%;
 }
-
-/*@keyframes pageDisplay {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}*/
 
 /* Media Queries*/
 /*----------------------------------------------------------------------*/
