@@ -52,7 +52,7 @@ p {
     min-height: 100vh;
 }
 
-.page-header{
+.page-header {
     Display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -60,6 +60,31 @@ p {
     grid-column: 1 / span 4;
 }
 
+/*Issue #8 CSS */
+
+.div--data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14em;
+    margin-top: 2em;
+    background-color: rgba(109, 103, 93, 100%);
+    overflow: auto;
+}
+
+.div--hide {
+    display: none !important;
+}
+
+.data-display {
+    display: flex;
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+}
 
 /* Site nav bar styles */
 
