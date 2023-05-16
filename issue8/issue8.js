@@ -23,6 +23,7 @@ function getData() {
                 Object.keys(character).forEach((key) => {
                     //**Loop through and display character data
                     let liElement = document.createElement('li');
+                    liElement.setAttribute('class', 'li--data');
                     liElement.innerHTML = key + ": " + character[key];
                     dataList.append(liElement);
                     console.log(character[key]);
@@ -31,8 +32,7 @@ function getData() {
             })
         })
         .catch((error) => {
-            let divElement = document.querySelector('.div--data');
-            //divElement.innerHTML = 'Error during fetch: ' + error.message;
+            divElement.innerHTML = 'Error during fetch: ' + error.message;
             console.log('Error during fetch: ' + error.message);
         })
 };
