@@ -80,6 +80,7 @@ p {
 
 .data-display {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 1em;
     padding: 1em;

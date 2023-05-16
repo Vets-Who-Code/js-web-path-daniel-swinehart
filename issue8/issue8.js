@@ -1,6 +1,11 @@
 function getData() {
     let timeOut = new Promise((resolve) => setTimeout(resolve, 1000));
     console.log('waiting 1 sec');
+    //**Create 'div' and add to section .index-about-me
+    let divElement = document.createElement('div');
+    divElement.setAttribute('class', 'div--data');
+    divElement.innerHTML = 'Data Loading...';
+    bodyElement.insertBefore(divElement, bodyElement.lastChild);
     timeOut.then(() => fetch('https://swapi.dev/api/people/'))
         .then((response) => response.json()) //**Retrieve JSON data object
         .then((response) => {
@@ -9,12 +14,9 @@ function getData() {
             return response.results;
         })
         .then(data => {
-            //**Create 'div' and add to section .index-about-me
-            let divData = document.createElement('div');
-            divData.setAttribute('class', 'div--data');
-            bodyElement.insertBefore(divData, bodyElement.lastChild); 
-            let divElement = document.querySelector('.div--data');
             //**Create 'ul' for each Star Wars character
+            let divElement = document.querySelector('.div--data');
+            divElement.innerHTML = '';
             data.forEach((character) => {
                 let dataList = document.createElement('ul');
                 dataList.setAttribute('class', 'data-display');
@@ -23,17 +25,14 @@ function getData() {
                     let liElement = document.createElement('li');
                     liElement.innerHTML = key + ": " + character[key];
                     dataList.append(liElement);
-                    divElement.append(dataList);
                     console.log(character[key]);
                 })
-                
+                divElement.append(dataList);
             })
         })
         .catch((error) => {
-            let divData = document.createElement('div');
-            divData.setAttribute('class', 'div--data');
-            divData.innerHTML = 'Error during fetch: ' + error.message;
-            bodyElement.insertBefore(divData, bodyElement.lastChild); 
+            let divElement = document.querySelector('.div--data');
+            //divElement.innerHTML = 'Error during fetch: ' + error.message;
             console.log('Error during fetch: ' + error.message);
         })
 };
