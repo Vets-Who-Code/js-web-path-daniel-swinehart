@@ -35,5 +35,3 @@ const myFunctionVariable = addToArray;
 
 //Using variable to pass array an console.log result 
 console.log(myFunctionVariable(newObjArray, 10));
-
-console.log("my check");
