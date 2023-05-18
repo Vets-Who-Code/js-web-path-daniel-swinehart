@@ -24,8 +24,8 @@
 88/home/d4570s/js-web-path-daniel-swinehart/issue7/images/scenic-rock-mobile-greyscale.jpg1684343669525866609 0
 82/home/d4570s/js-web-path-daniel-swinehart/issue7/images/project-hero-greyscale.jpg1684343669525866609 0
 48/home/d4570s/js-web-path-daniel-swinehart/issue71684343669525866609 1
-54/home/d4570s/js-web-path-daniel-swinehart/package.json1684347361095889205 0
-63/home/d4570s/js-web-path-daniel-swinehart/.vscode/settings.json1684347607955887350 0
+54/home/d4570s/js-web-path-daniel-swinehart/package.json1684420856317043627 0
+63/home/d4570s/js-web-path-daniel-swinehart/.vscode/settings.json1684419899567065742 0
 75/home/d4570s/js-web-path-daniel-swinehart/node_modules/path-type/index.d.ts1684345429205895630 0
 73/home/d4570s/js-web-path-daniel-swinehart/node_modules/path-type/index.js1684345429225895634 0
 74/home/d4570s/js-web-path-daniel-swinehart/node_modules/path-type/readme.md1684345429295895647 0
@@ -1855,7 +1855,7 @@
 122/home/d4570s/js-web-path-daniel-swinehart/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Nth.js1684345430465895872 0
 98/home/d4570s/js-web-path-daniel-swinehart/node_modules/caniuse-lite/data/features/input-pattern.js1684345430885896041 0
 107/home/d4570s/js-web-path-daniel-swinehart/node_modules/caniuse-lite/data/features/link-rel-modulepreload.js1684345430895896046 0
-64/home/d4570s/js-web-path-daniel-swinehart/issue9/dist/index.html1684347667925886774 0
+64/home/d4570s/js-web-path-daniel-swinehart/issue9/dist/index.html1684419948787045855 0
 91/home/d4570s/js-web-path-daniel-swinehart/node_modules/css-tree/lib/syntax/atrule/import.js1684345430675895956 0
 91/home/d4570s/js-web-path-daniel-swinehart/node_modules/node-addon-api/napi-inl.deprecated.h1684345429335895655 0
 107/home/d4570s/js-web-path-daniel-swinehart/node_modules/csso/node_modules/css-tree/lib/parser/SyntaxError.js1684345430775895997 0
@@ -1919,7 +1919,7 @@
 73/home/d4570s/js-web-path-daniel-swinehart/node_modules/get-port/readme.md1684345429305895649 0
 77/home/d4570s/js-web-path-daniel-swinehart/node_modules/nth-check/lib/index.js1684345429355895659 0
 86/home/d4570s/js-web-path-daniel-swinehart/node_modules/@parcel/workers/lib/cpuCount.js1684345429555895697 0
-52/home/d4570s/js-web-path-daniel-swinehart/issue9/src1684347319495886702 1
+52/home/d4570s/js-web-path-daniel-swinehart/issue9/src1684419828717079972 1
 111/home/d4570s/js-web-path-daniel-swinehart/node_modules/@parcel/package-manager/test/fixtures/packages/peers-2.01684345430185895818 1
 91/home/d4570s/js-web-path-daniel-swinehart/node_modules/@swc/helpers/lib/_to_property_key.js1684345430105895803 0
 126/home/d4570s/js-web-path-daniel-swinehart/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/Url.js1684345430555895907 0
@@ -2096,7 +2096,7 @@
 96/home/d4570s/js-web-path-daniel-swinehart/node_modules/caniuse-lite/data/features/eventsource.js1684345430795896005 0
 102/home/d4570s/js-web-path-daniel-swinehart/node_modules/csso/node_modules/css-tree/lib/walker/create.js1684345430595895923 0
 89/home/d4570s/js-web-path-daniel-swinehart/node_modules/caniuse-lite/data/features/sdch.js1684345430975896078 0
-53/home/d4570s/js-web-path-daniel-swinehart/issue9/dist1684400105071395856 1
+53/home/d4570s/js-web-path-daniel-swinehart/issue9/dist1684419828717079972 1
 96/home/d4570s/js-web-path-daniel-swinehart/node_modules/caniuse-lite/data/features/shadowdomv1.js1684345430975896078 0
 90/home/d4570s/js-web-path-daniel-swinehart/node_modules/node-releases/data/release-schedule1684345429435895674 1
 111/home/d4570s/js-web-path-daniel-swinehart/node_modules/@parcel/watcher/prebuilds/win32-x64/node.napi.glibc.node1684345430375895855 0
