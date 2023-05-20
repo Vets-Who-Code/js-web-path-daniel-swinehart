@@ -110,6 +110,7 @@ p {
 
 .my-logo {
     border: 2px solid rgba(25, 118, 210, 100%);
+    border-radius: 5px;
 }
 
 .logo-container {
