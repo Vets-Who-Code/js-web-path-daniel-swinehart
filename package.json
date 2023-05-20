@@ -5,7 +5,8 @@
   "main": "issue9/src/dist/issue9.js",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "parcel": "^2.8.3"
