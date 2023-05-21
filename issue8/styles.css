@@ -1,0 +1,671 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /*animation: pageDisplay 2s linear; */
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.div--bg-grey {
+    background-color:rgba(109, 103, 93, 100%); 
+}
+
+.div--bg-shape-round {
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: Flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.page-bottom-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1.5em;
+    width: 90%;
+}
+
+.page-content {
+    min-height: 100vh;
+}
+
+.page-header {
+    Display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 2em;
+    grid-column: 1 / span 4;
+}
+
+/*Issue #8 CSS */
+
+.li--data {
+    word-wrap: break-word;
+}
+
+.div--data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 14em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: rgba(109, 103, 93, 100%);
+    overflow: auto;
+}
+
+.div--hide {
+    display: none !important;
+}
+
+.data-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+/* Site nav bar styles */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    padding: 0.1em;
+    background-color: rgba(33, 150, 243, 100%);
+    z-index: 1;
+}
+
+.my-logo {
+    border: 2px solid rgba(25, 118, 210, 100%);
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em;
+    width: 2em;
+    height: 2em;
+    font-size: 0.5em;
+    border-radius: 5px;
+    background-color: rgba(109, 103, 93, 100%);
+}
+
+.nav-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 14em;
+    height: 2em;
+    background-color: rgba(33, 150, 243, 100%);
+    border-radius: 2px;
+}
+
+.nav-btn-container__link {
+    display: inline-block;
+    margin: 0.5em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Used to highlight nav-bar current page*/
+.about-page .nav-bar .nav-btn-container .about-page,
+.project-page .nav-bar .nav-btn-container .project-page,
+.contact-page .nav-bar .nav-btn-container .contact-page {
+    border-bottom: 3px solid white;
+}
+
+/* Site grid styles */
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / span 4;
+}
+
+/* Index page styles */
+
+.home-pg-bg {
+    background-image: url("images/scenic-rock-mobile-greyscale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.index-about-me {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 4em;
+    padding: 1em;
+}
+
+.twitter-feed {
+    display: flex;
+    width: 100%;
+    height: 12em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+/* Projects page styles */
+
+.project-pg-hero {
+    background-image: url("images/project-hero-greyscale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.grid-item-project {
+    margin: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: rgba(25, 118, 210, 100%);
+    border-radius: 2px;
+}
+
+.grid-item-project-1 {
+    margin-top: 4em;
+}
+
+.project-img-container {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/* About page styles */
+
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 1em 2em 1em;
+    width: 15em;
+    height: 15em;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 12em;
+    margin-top: 2em;
+    border-radius: 2px;
+}
+
+.about-pg-bg {
+    background-image: url("images/globe-hero-greyscale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.grid-item-about {
+    margin: 0em 1em 4em 1em;
+    padding: 1em;
+    background-color: white;
+} 
+
+/* Contact page styles */
+
+.contact-pg-hero {
+    background-image: url("images/contact-hero-1-greyscale2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-heading-container {
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+.contact-heading {
+    margin: 4em 1em 1em 1em;
+    color: white;
+}
+
+.social-links-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.social-link-img {
+    width: 2em;
+}
+
+.email-form-container {
+    height: 15em;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(33, 150, 243, 100%);
+    border-radius: 2px;   
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.location-map {
+    height: 15em;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.contact-info {
+    margin: 1em;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 3px;
+}
+
+.contact-icons {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+/* Site Footer styles */
+
+.grid-footer {
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+}
+
+.flex-footer {
+    flex-direction: row;
+    margin: 1em;
+}
+
+.footer-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*@keyframes pageDisplay {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}*/
+
+/* Media Queries*/
+/*----------------------------------------------------------------------*/
+@media (min-width: 481px) {
+
+    .page-header{
+        Display: flex;
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 1;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-bar {
+        margin: 3em;
+        background-color: rgba(33, 150, 243, 0%);
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em;
+        width: 8em;
+        height: 8em;
+        font-size: 0.70em;
+        border-radius: 5px;
+        background-color: rgba(25, 118, 210, 100%);
+    }
+
+    .nav-btn-container {
+        margin-left: 3em;
+    }
+    
+    .grid-container--8x7 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .grid-container--8x5 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .grid-container--8x4 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .grid-container--8x3 {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .div--display-none {
+        display: none;
+    }
+
+    /* Index page styles */
+
+    .home-pg-bg {
+        background-image: url("images/scenic-rock-greyscale2.jpg");
+    }
+
+    .index-about-me {
+        align-items: flex-start;
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 3;
+        margin: 0;
+    }
+
+    .twitter-feed {
+        height: 10em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    /* Projects page styles */
+    
+    .grid-item-project-1 {
+        margin: 1em;
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-2 {
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-3 {
+        grid-column: 3 / span 4;
+        grid-row: 5 / span 3;
+    }
+
+    /* About page styles */
+    .grid-item-profile {
+        justify-content: flex-start;
+        grid-row: 2 / span 2;
+        margin: 1em 1em 1em 1em;
+        padding: 0;
+    }
+
+    .profile-img-container {
+        margin: 0;
+        width: 12em;
+        height: 12em;
+    }
+
+    .grid-item-about {
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+        margin: 1em 1em 4em 1em;
+        border-radius: 2px;
+    }
+
+    .text-summary--sm {
+        font-size: 0.8em;
+    }
+
+    /* Contact page styles */
+
+    .contact-heading-container {
+        grid-column: 1 / span 8;
+        text-align: center;
+    }
+    
+    .contact-heading {
+        margin: 2em 1em 1em 1em;
+    }
+    
+    .social-links-container {
+        grid-column: 1 / span 8;
+    }
+    
+    .social-link-img {
+        width: 3em;
+    }
+    
+    .email-form-container {
+        grid-row: 1 / span 2;   
+    }
+    
+    .location-map {
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 2;
+    }
+    
+    .contact-info {
+        grid-column: 3 / span 4;
+        grid-row: 3 / span 2;
+    }
+    
+    .contact-detail {
+        margin: 5px;
+    }
+    
+    .contact-icons {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    /* Footer styles */
+
+    .grid-footer {
+        width: 100%;
+        height: auto;
+        grid-column: 1 / span 8;
+        grid-row: 5 / span 1;
+    }
+}
+
+/*--------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    
+    .page-content {
+        max-width: 1440px;
+    }
+
+    /* Site nav bar styles */
+    .page-header{
+        Display: flex;
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+    }
+
+    .nav-bar {
+        margin: 3em;
+        background-color: rgba(33, 150, 243, 0%);
+    }
+
+    .grid-container--12x5 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .grid-container--12x4 {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .grid-footer {
+        grid-column: 1 / span 12;
+        grid-row: 12 / span 1;
+    }
+
+    .my-logo {
+        width: 40px;
+        height: 40px;
+        border: 5px solid rgba(25, 118, 210, 100%);
+    }
+
+    /* Index page styles */
+
+    .home-pg-bg {
+        background-image: url("images/scenic-rock-greyscale2.jpg");
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+    
+    .index-about-me {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        grid-column: 2 / span 5;
+        grid-row: 2 / span 3;
+    }
+
+    .text-summary {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    /* Projects page styles */
+
+    .project-pg-hero {
+        background-image: url("images/project-hero-greyscale.jpg");
+    }
+
+    .grid-item-project-1 {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-2 {
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    .grid-item-project-3 {
+        grid-column: 9 / span 4;
+        grid-row: 2 / span 3;
+    }
+
+    /* About page styles */
+
+    .grid-item-profile {
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 6;
+        margin: 1em;
+    }
+
+    .profile-img-container {
+        margin: 0;
+        width: 18em;
+        height: 18em;
+    }
+
+
+    .grid-item-about {
+        grid-column: 7 / span 5;
+        grid-row: 2 / span 8;
+        background-color: white;
+    }
+
+    /* Contact page styles */
+
+    .contact-heading-container {
+        grid-column: 1 / span 12;
+        grid-row: 2 / Span 1;
+    }
+
+    .social-links-container {
+        grid-column: 1 / span 12;
+        grid-row: 4 / span 1;
+    }
+
+    .social-link-img {
+        width: 5em;
+    }
+
+    .email-form-container {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 4;
+        padding: 1em;  
+    }
+
+    .location-map {
+        grid-column: 9 / span 4;
+        grid-row: 1 / span 4; 
+    }
+
+    .contact-info {
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 4; 
+    }
+
+    .contact-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        margin: 5px;
+    }
+}
