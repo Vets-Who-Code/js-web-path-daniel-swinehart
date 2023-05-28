@@ -1,5 +1,5 @@
 //Function to add a passed number objects to passed array
-function addToArray(array: {name: string, address: string, phone: string} [], inputNumber: number) {
+function addToArray(array: setArray, inputNumber: number) {
     for (let x = 0; x < inputNumber; x++) {
         array.push({
             "name": makeRandomString(8),
@@ -21,14 +21,17 @@ function makeRandomString(length: number) {
 };
 
 //Type for an array of objects with values of strings
-const objArray: {name: string, address: string, phone: string} [] = [
+type setArray = {name: string, address: string, phone: string} [];
+
+//Declare new array with previous type
+const objArray: setArray = [
     {"name": "John Doe", "address": "101 SomeStreet", "phone": "5555555555"}];
 
 //Call of function to add objects to array
 console.log(addToArray(objArray, 5));
 
 //Created empty array with array type 'object'
-const newObjArray: {name: string, address: string, phone: string} [] = [];
+const newObjArray: setArray = [];
 
 //Created new variable calling function
 const myFunctionVariable = addToArray;
