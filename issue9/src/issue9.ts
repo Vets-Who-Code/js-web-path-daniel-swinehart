@@ -10,7 +10,7 @@ function addToArray(array: setArray, inputNumber: number) {
     return array;
 };
 
-//Function to generate string of random characters of given length
+//Function to generate string of random characters of given length.
 function makeRandomString(length: number) {
     let randomString = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
