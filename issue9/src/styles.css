@@ -11,7 +11,7 @@ body {
     background-color: white;
 }
 
-h1 {
+h1, h3 {
     margin: 0;
     padding: 0;
 }
@@ -20,6 +20,25 @@ p {
     font-size: 1em;
     margin: 0;
     padding: 0;
+}
+
+input, select {
+    width: 80%;
+    height: 1.5em;
+    border: solid 1px black;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+label {
+    width: 80%;
+    height: 1em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+button {
+    margin: 5px;
 }
 
 .div--bg-grey {
@@ -75,8 +94,9 @@ p {
 }
 
 .my-logo {
-    border: 2px solid rgba(25, 118, 210, 100%);
-    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgba(25, 118, 210, 100%);
 }
 
 .logo-container {
@@ -247,6 +267,16 @@ p {
     margin-bottom: 1em;
 }
 
+.icon-bg-linkedin {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 2.025em;
+    height: 1.69em;
+    background-color: white;
+    border-radius: 2.2px;
+}
+
 .social-link-img {
     width: 2em;
 }
@@ -264,6 +294,11 @@ p {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+    width: 100%;
+}
+
+.email-font {
+    color: white;
 }
 
 .location-map {
@@ -274,7 +309,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgba(33, 150, 243, 100%);
     border-radius: 2px;
 }
 
@@ -285,8 +320,8 @@ p {
 .contact-detail {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     align-items: center;
+    width: 100%;
     margin: 3px;
 }
 
@@ -527,12 +562,6 @@ p {
     .grid-footer {
         grid-column: 1 / span 12;
         grid-row: 12 / span 1;
-    }
-
-    .my-logo {
-        width: 40px;
-        height: 40px;
-        border: 5px solid rgba(25, 118, 210, 100%);
     }
 
     /* Index page styles */
