@@ -141,7 +141,6 @@ button {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0;
 }
 
 .grid-item {
@@ -257,7 +256,7 @@ button {
 }
 
 .contact-heading {
-    margin: 4em 1em 1em 1em;
+    margin: 2em 1em 2em 1em;
     color: white;
 }
 
@@ -321,7 +320,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 85%;
     margin: 3px;
 }
 
@@ -485,7 +484,7 @@ button {
     }
     
     .contact-heading {
-        margin: 2em 1em 1em 1em;
+        margin: 1em 1em 1em 1em;
     }
     
     .social-links-container {
@@ -634,6 +633,10 @@ button {
     .contact-heading-container {
         grid-column: 1 / span 12;
         grid-row: 2 / Span 1;
+    }
+
+    .contact-heading {
+        margin: 2em 1em 1em 0em;
     }
 
     .social-links-container {
