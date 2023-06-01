@@ -230,12 +230,14 @@ button {
 /* About page styles */
 
 .profile-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 4em 1em 2em 1em;
     width: 15em;
     height: 15em;
+    background-image: url("images/profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .slideshow-container {
@@ -243,6 +245,20 @@ button {
     height: 12em;
     margin-top: 2em;
     border-radius: 2px;
+}
+
+.slideshow-slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
 }
 
 .about-pg-bg {
