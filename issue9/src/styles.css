@@ -269,6 +269,11 @@ p {
 .location-map {
     height: 15em;
     margin: 1em;
+    background-image: url("images/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     border: 1px solid black;
     border-radius: 2px;
 }
