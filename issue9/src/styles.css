@@ -187,6 +187,7 @@ button {
 }
 
 .grid-item-project {
+    justify-content: flex-start;
     margin: 1em;
     padding: 0.5em;
     color: white;
@@ -194,16 +195,34 @@ button {
     border-radius: 2px;
 }
 
+.project-summary {
+    margin: 0.5em;
+}
+
 .grid-item-project-1 {
     margin-top: 4em;
 }
 
-.project-img-container {
-    display: flex;
+.project-img-container-1 {
     width: 100%;
     height: 250px;
-    background-color: white;
-    color: black;
+    background-image: url("images/projects/spend-app.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.project-img-container-2 {
+    width: 100%;
+    height: 250px;
+    background-image: url("images/projects/coaching.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
     border: 1px solid black;
     border-radius: 2px;
 }
