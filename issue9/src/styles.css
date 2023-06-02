@@ -438,8 +438,8 @@ button {
         justify-content: center;
         align-items: center;
         padding: 0.2em;
-        width: 12em;
-        height: 12em;
+        width: 6em;
+        height: 6em;
     }
 
     .nav-btn-container {
@@ -487,6 +487,11 @@ button {
         height: 10em;
         margin-top: 2em;
         margin-bottom: 0;
+        border: 1px solid red;
+    }
+
+    .twitter-timeline {
+        width: 100%;
     }
 
     /* Projects page styles */
