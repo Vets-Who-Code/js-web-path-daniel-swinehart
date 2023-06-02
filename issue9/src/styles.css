@@ -93,12 +93,6 @@ button {
     z-index: 1;
 }
 
-.my-logo {
-    width: 40px;
-    height: 40px;
-    border: 5px solid rgba(25, 118, 210, 100%);
-}
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -106,9 +100,15 @@ button {
     padding: 0.2em;
     width: 2em;
     height: 2em;
-    font-size: 0.5em;
-    border-radius: 5px;
-    background-color: rgba(109, 103, 93, 100%);
+}
+
+.nav-logo {
+    display: block;
+    width: 100%;
+}
+
+.nav-logo-lg {
+    display: none;
 }
 
 .nav-btn-container {
@@ -164,7 +164,7 @@ button {
 .index-about-me {
     justify-content: flex-start;
     text-align: left;
-    margin-top: 4em;
+    margin-top: 2em;
     padding: 1em;
 }
 
@@ -401,10 +401,10 @@ button {
     width: 100%;
 }
 
-/*@keyframes pageDisplay {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}*/
+.footer-logo {
+    width: 30px;
+    height: 30px;
+}
 
 /* Media Queries*/
 /*----------------------------------------------------------------------*/
@@ -423,16 +423,23 @@ button {
         background-color: rgba(33, 150, 243, 0%);
     }
 
+    .nav-logo {
+        display: none;
+        width: 100%;
+    }
+    
+    .nav-logo-lg {
+        display: block;
+        width: 100%;
+    }
+
     .logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0.2em;
-        width: 8em;
-        height: 8em;
-        font-size: 0.70em;
-        border-radius: 5px;
-        background-color: rgba(25, 118, 210, 100%);
+        width: 12em;
+        height: 12em;
     }
 
     .nav-btn-container {
