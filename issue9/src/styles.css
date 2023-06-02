@@ -176,6 +176,12 @@ button {
     margin-bottom: 4em;
 }
 
+.twitter-timeline {
+    width: 100%;
+    overflow: auto;
+    border-radius: 12px;
+}
+
 /* Projects page styles */
 
 .project-pg-hero {
@@ -487,11 +493,6 @@ button {
         height: 10em;
         margin-top: 2em;
         margin-bottom: 0;
-        border: 1px solid red;
-    }
-
-    .twitter-timeline {
-        width: 100%;
     }
 
     /* Projects page styles */
