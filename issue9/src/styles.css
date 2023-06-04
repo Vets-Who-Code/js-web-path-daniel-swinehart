@@ -111,12 +111,25 @@ button {
     display: none;
 }
 
-.nav-btn-container {
+.mobile-menu-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 14em;
+    width: 3em;
     height: 2em;
+}
+
+.mobile-menu {
+    width: 60%;
+}
+
+.nav-btn-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 8em;
+    height: 8em;
     background-color: rgba(33, 150, 243, 100%);
     border-radius: 2px;
 }
@@ -446,8 +459,19 @@ button {
         height: 6em;
     }
 
+    .mobile-menu-container {
+        display: none;
+    }
+
     .nav-btn-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 14em;
+        height: 2em;
         margin-left: 3em;
+        background-color: rgba(33, 150, 243, 100%);
+        border-radius: 2px;
     }
     
     .grid-container--8x7 {
@@ -600,6 +624,10 @@ button {
     .nav-bar {
         margin: 3em;
         background-color: rgba(33, 150, 243, 0%);
+    }
+
+    .nav-btn-container {
+        margin: 0;
     }
 
     .grid-container--12x5 {
