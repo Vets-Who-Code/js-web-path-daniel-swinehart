@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body class="contact-page flex-container">
+    <main class="page-content flex-container">
+        <div class="grid-container grid-container--8x3 grid-container--12x4 contact-pg-hero">
+            <header class="page-header">
+                <nav class="nav-bar">
+                    <div class="logo-container">
+                        <a href="index.html">Site Logo</a>
+                    </div>
+                    <div class="nav-btn-container">
+                        <a href="about.html" class="nav-btn-container__link about-page">About</a>
+                        <a href="projects.html" class="nav-btn-container__link project-page">Projects</a>
+                        <a href="contact.html" class="nav-btn-container__link contact-page">Contact</a>
+                    </div>
+                </nav>
+            </header>
+            <!--Contact Hero/Social Media Section-->
+            <div class="grid-item contact-heading-container">
+                <h1 class="contact-heading">CONTACT ME</h1>
+            </div>
+            <div class="grid-item social-links-container">
+                <a href="#">
+                    <img class="social-link-img" src="images/github-icon.svg">
+                </a>
+                <a href="#">
+                    <img class="social-link-img" src="images/linkedIn-icon.png">
+                </a>
+                <a href="#">
+                    <img class="social-link-img" src="images/twitter-icon.svg">
+                </a>
+                <a href="#">
+                    <img class="social-link-img" src="images/instagram-icon.svg">
+                </a>
+                <a href="#">
+                    <img class="social-link-img" src="images/facebook-icon.png">
+                </a>
+            </div>
+        </div>
+        <!--Bottom Contact/Email form/Map-->
+        <section class="grid-container grid-container--8x4 grid-container--12x4">
+            <div class="grid-item email-form-container">
+                <p>Send an email</p>
+                <form class="email-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe" required>
+                    <label for="email-address">Email</label>
+                    <input type="email" name="email-address" id="email-address" placeholder="name@domain.com" required>
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject" required>
+                        <option value="work" selected>Work Inquiry</option>
+                        <option value="social">Social Networking</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <input type="textarea" name="message" id="message" placeholder="Your message here" required>
+                    <br>
+                    <button name="submit">Submit</button>
+                </form>
+            </div>
+            <div class="grid-item location-map div--bg-grey">
+                <p>Google Map</p>
+            </div>
+            <address class="grid-item contact-info">
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/location-dot-solid.svg">
+                    <p>5555 MyStreetName St NE<br>SomeTown, USA 99999</p>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/envelope-solid.svg">
+                    <p>d4570s@gmail.com</p>
+                </div>
+                <div class="contact-detail">
+                    <img class="contact-icons" src="images/phone-solid.svg">
+                    <p>+1(555)555-5555</p>
+                </div>
+            </address>
+        </section>
+        <!--Footer section-->
+        <footer class="flex-container flex-footer">
+            <div class="footer-content">
+                <img class="my-logo"src="/images/basicLogo.png">
+                <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
