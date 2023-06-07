@@ -1,0 +1,14 @@
+{
+  "name": "daniel-portfolio",
+  "version": "1.0.0",
+  "source": "issue9/src/issue9.ts",
+  "main": "issue9/src/dist/issue9.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
