@@ -1,14 +1,20 @@
 {
   "name": "daniel-portfolio",
   "version": "1.0.0",
-  "source": "issue9/src/issue9.ts",
-  "main": "issue9/src/dist/issue9.js",
+  "source": "issue9/src/index.html",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
     "tsc": "tsc"
   },
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.9",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

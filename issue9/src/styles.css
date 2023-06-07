@@ -141,12 +141,20 @@ button {
     text-decoration: none;
     cursor: pointer;
 }
-/*Used to highlight nav-bar current page*/
+/*Used to highlight nav-bar current page mobile*/
 .about-page .nav-bar .nav-btn-container .about-page,
 .project-page .nav-bar .nav-btn-container .project-page,
 .contact-page .nav-bar .nav-btn-container .contact-page {
     border-bottom: 3px solid white;
 }
+
+/*Used to highlight nav-bar current page nav-lg*/
+.about-page .nav-bar-lg .nav-btn-container .about-page,
+.project-page .nav-bar-lg .nav-btn-container .project-page,
+.contact-page .nav-bar-lg .nav-btn-container .contact-page {
+    border-bottom: 3px solid white;
+}
+
 
 /* Site grid styles */
 
