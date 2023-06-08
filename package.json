@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "source": "issue9/src/index.html",
   "scripts": {
+    "start": "parcel",
     "watch": "parcel watch",
     "build": "parcel build",
     "tsc": "tsc"
