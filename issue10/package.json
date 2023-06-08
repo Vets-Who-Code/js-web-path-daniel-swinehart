@@ -2,7 +2,7 @@
   "name": "issue10",
   "version": "1.0.0",
   "description": "react-website",
-  "main": "src/index.html",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "watch": "parcel watch",
