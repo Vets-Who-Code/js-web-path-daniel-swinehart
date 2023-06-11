@@ -17,10 +17,10 @@ export function Counter() {
 
   return (
     <>
-    <h1 className="count-display">Count= {countValue}</h1>
-    <button type="button" className="test" onClick={addOne}>Increase Value</button>
-    <button type="button" className="test" onClick={subtractOne}>Subtract Value</button>
-    <button type="button" className="test" onClick={resetCounter}>Reset Value</button>
+    <h1 className="count-display">Count = {countValue}</h1>
+    <button type="button" className="test" onClick={addOne}>Increase</button>
+    <button type="button" className="test" onClick={subtractOne}>Subtract</button>
+    <button type="button" className="test" onClick={resetCounter}>Reset</button>
     </>
   );
 };
