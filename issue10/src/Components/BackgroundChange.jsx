@@ -1,26 +1,31 @@
 import { useState } from 'react';
 
 export function ChangeBg() {
-  const [currentBg, setBg] = useState(0);
-
-  function bgChange() {
-    setBg(countValue + 1);
-  };
-
-  function subtractOne() {
-    setCountValue(countValue - 1);
-  };
-
-  function resetCounter() {
-    setCountValue(countValue * 0);
+  const [currentBg, setBg] = useState("image");
+  let mainBody = document.querySelector(".page-content");
+  
+  function switchBg() {
+    if(currentBg === "image") {
+      mainBody.classList.remove("home-pg-bg");
+      mainBody.classList.add("alt-bg");
+      setBg("grey");
+    } else {
+      mainBody.classList.remove("alt-bg");
+      mainBody.classList.add("home-pg-bg");
+      setBg("image");
+    }
   };
 
   return (
     <>
-    <h1 className="count-display">Count= {countValue}</h1>
-    <button type="button" className="test" onClick={addOne}>Increase Value</button>
-    <button type="button" className="test" onClick={subtractOne}>Subtract Value</button>
-    <button type="button" className="test" onClick={resetCounter}>Reset Value</button>
+    <h1 className="bg-display">Change Background</h1>
+    {currentBg === "image" && (
+      <button type="button" className="button-bg-chg" onClick={switchBg}>Grey</button>
+    )}
+    {currentBg === "grey" && (
+      <button type="button" className="button-bg-chg" onClick={switchBg}>Image</button>
+    )}
+    
     </>
   );
 };

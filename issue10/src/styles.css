@@ -8,7 +8,6 @@ body {
     margin: 0px;
     padding: 0px;
     /*animation: pageDisplay 2s linear; */
-    background-color: white;
 }
 
 h1, h3 {
@@ -173,6 +172,10 @@ button {
 }
 
 /* Index page styles */
+
+.alt-bg {
+    background: rgb(191, 191, 197);
+}
 
 .home-pg-bg {
     background-image: url("images/scenic-rock-mobile-greyscale.jpg");
