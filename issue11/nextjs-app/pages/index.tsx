@@ -1,44 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Header from '../components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    <>
     <main className="page-content grid-container grid-container--8x4 grid-container--12x5 home-pg-bg">
-      <header className="page-header">
-        <nav className="nav-bar">
-          <div className="logo-container">
-            <div className="nav-logo">
-              <a href="index.html">
-                <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
-              </a>
-            </div>
-          </div>
-          <div className="mobile-menu-container">
-            <div className="mobile-menu">
-              <Image src="menuMobile.svg" alt="Menu" fill={true} />
-            </div>
-            <div className="nav-btn-container">
-              <a href="about.html" className="nav-btn-container__link about-page">About</a>
-              <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
-              <a href="contact.html" className="nav-btn-container__link contact-page">Contact</a>
-            </div>
-          </div>
-        </nav>
-        <nav className="nav-bar-lg">
-          <div className="logo-container">
-            <a href="index.html">
-              <Image src="danielLogo.svg" alt="Site Logo" width={100} height={100} />
-            </a>
-          </div>
-          <div className="nav-btn-container">
-            <a href="about.html" className="nav-btn-container__link about-page">About</a>
-            <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
-            <a href="contact.html" className="nav-btn-container__link contact-page">Contact</a>
-          </div>
-        </nav>
-      </header>
+      <Header />
       {/*About Me Summary Section*/}
       <section className="grid-item index-about-me">
         <h1 className="main-heading">Hi there! My name is Daniel.</h1>
@@ -50,10 +20,11 @@ export default function Home() {
       {/*Footer section*/}
       <footer className="grid-item grid-footer">
         <div className="footer-content">
-          <img className="footer-logo"src="/images/danielLogo.svg"/>
+          <Image className="footer-logo" src="danielLogo.svg" alt="Site Logo" fill={true} />
           <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
         </div>
       </footer>
     </main> 
+    </>
   );
 };

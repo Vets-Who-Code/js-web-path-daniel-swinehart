@@ -119,10 +119,11 @@ button {
 }
 
 .mobile-menu-container {
-    display: flex;
+    display: block;
+    /*display: flex;
     flex-direction: column;
     justify-content: right;
-    align-items: flex-end;
+    align-items: flex-end;*/
     width: 5em;
     height: 2em;
 }
@@ -133,9 +134,10 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
+    float: right;
     width: 1.8em;
     height: 1.8em;
-    margin: 0.2em;
+    margin: 0.1em 0.3em;
 }
 
 .mobile-menu img {
@@ -143,7 +145,7 @@ button {
 }
 
 .nav-btn-container {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
