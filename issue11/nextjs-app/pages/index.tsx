@@ -9,12 +9,16 @@ export default function Home() {
       <header className="page-header">
         <nav className="nav-bar">
           <div className="logo-container">
-            <a href="index.html">
-              <Image src="danielLogo.svg" alt="Site Logo" width={30} height={30} />
-            </a>
+            <div className="nav-logo">
+              <a href="index.html">
+                <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
+              </a>
+            </div>
           </div>
           <div className="mobile-menu-container">
-            <Image src="menu-mobile.svg" alt="Menu" width={40} height={30} />
+            <div className="mobile-menu">
+              <Image src="menuMobile.svg" alt="Menu" fill={true} />
+            </div>
             <div className="nav-btn-container">
               <a href="about.html" className="nav-btn-container__link about-page">About</a>
               <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
