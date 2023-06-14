@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Header from '../components/Header'
+import { Inter } from 'next/font/google';
+import Header from '../components/Header';
+import FooterGrid from '../components/FooterGrid';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,13 +17,7 @@ export default function Home() {
           <a className="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/ThePracticalDev?ref_src=twsrc%5Etfw">Tweets by ThePracticalDev</a> <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
       </section>
-      {/*Footer section*/}
-      <footer className="grid-item grid-footer">
-        <div className="footer-content">
-          <Image className="footer-logo" src="danielLogo.svg" alt="Site Logo" fill={true} />
-          <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
-        </div>
-      </footer>
+      <FooterGrid />
     </main> 
     </>
   );

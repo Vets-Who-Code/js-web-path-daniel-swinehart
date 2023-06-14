@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="nav-bar">
         <div className="logo-container">
           <div className="nav-logo">
-            <a href="index.html">
+            <a href="/Home">
               <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
             </a>
           </div>
@@ -28,7 +28,7 @@ export default function Header() {
           </div>
           {dropDown === "display" && (
             <div className="nav-btn-container">
-            <a href="about.html" className="nav-btn-container__link about-page">About</a>
+            <a href="/about" className="nav-btn-container__link about-page">About</a>
             <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
             <a href="contact.html" className="nav-btn-container__link contact-page">Contact</a>
           </div>

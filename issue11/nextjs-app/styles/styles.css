@@ -441,8 +441,17 @@ button {
 }
 
 .footer-logo {
-    width: 30px;
-    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 2em;
+    height: 2em;
+}
+
+.footer-logo img {
+    object-fit: contain;
 }
 
 /* Media Queries*/
