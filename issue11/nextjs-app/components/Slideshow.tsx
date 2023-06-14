@@ -3,6 +3,7 @@ import { useState } from 'react';
 export default function Slideshow() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    
     //slideshow images
     const slideImages = [
         "/slideshow/imgOne.jpg",
