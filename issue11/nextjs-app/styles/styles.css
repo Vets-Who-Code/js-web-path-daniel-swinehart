@@ -114,16 +114,22 @@ button {
     height: 100%;
 }
 
+.home-logo-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .nav-logo img {
     object-fit: contain;
 }
 
 .mobile-menu-container {
     display: block;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: flex-end;*/
     width: 5em;
     height: 2em;
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   const [dropDown, setDropDown] = useState("hide");
@@ -16,11 +17,9 @@ export default function Header() {
       <header className="page-header">
       <nav className="nav-bar">
         <div className="logo-container">
-          <div className="nav-logo">
-            <a href="/Home">
-              <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
-            </a>
-          </div>
+          <Link className="home-logo-link" href="/">
+            <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
+          </Link>
         </div>
         <div className="mobile-menu-container">
           <div className="mobile-menu">
@@ -28,23 +27,23 @@ export default function Header() {
           </div>
           {dropDown === "display" && (
             <div className="nav-btn-container">
-            <a href="/about" className="nav-btn-container__link about-page">About</a>
-            <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
-            <a href="contact.html" className="nav-btn-container__link contact-page">Contact</a>
+            <Link href="/about" className="nav-btn-container__link about-page">About</Link>
+            <Link href="projects.html" className="nav-btn-container__link project-page">Projects</Link>
+            <Link href="contact.html" className="nav-btn-container__link contact-page">Contact</Link>
           </div>
           )}
         </div>
       </nav>
       <nav className="nav-bar-lg">
         <div className="logo-container">
-          <a href="index.html">
+          <Link href="/">
             <Image src="danielLogo.svg" alt="Site Logo" width={100} height={100} />
-          </a>
+          </Link>
         </div>
         <div className="nav-btn-container">
-          <a href="about.html" className="nav-btn-container__link about-page">About</a>
-          <a href="projects.html" className="nav-btn-container__link project-page">Projects</a>
-          <a href="contact.html" className="nav-btn-container__link contact-page">Contact</a>
+          <Link href="/about" className="nav-btn-container__link about-page">About</Link>
+          <Link href="/projects" className="nav-btn-container__link project-page">Projects</Link>
+          <Link href="/contact" className="nav-btn-container__link contact-page">Contact</Link>
         </div>
       </nav>
     </header>
