@@ -8,7 +8,6 @@ body {
     margin: 0px;
     padding: 0px;
     /*animation: pageDisplay 2s linear; */
-    background-color: white;
 }
 
 h1, h3 {
@@ -174,6 +173,10 @@ button {
 
 /* Index page styles */
 
+.alt-bg {
+    background: rgb(191, 191, 197);
+}
+
 .home-pg-bg {
     background-image: url("images/scenic-rock-mobile-greyscale.jpg");
     background-position: center;
@@ -194,7 +197,7 @@ button {
     width: 100%;
     height: 12em;
     margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
 }
 
 .twitter-timeline {
