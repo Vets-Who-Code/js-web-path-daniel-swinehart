@@ -41,10 +41,6 @@ button {
     margin: 5px;
 }
 
-.div--bg-grey {
-    background-color:rgba(109, 103, 93, 100%); 
-}
-
 .div--bg-shape-round {
     border-radius: 50%;
 }
@@ -197,10 +193,7 @@ button {
 /* Index page styles */
 
 .home-pg-bg {
-    background-image: url("../public/scenic-rock-mobile-greyscale.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #119DA4;
     position: relative;
 }
 
@@ -304,11 +297,6 @@ button {
     animation-duration: 1.5s;
 }
 
-@keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-}
-
 .about-pg-bg {
     background-image: url("../public/globe-hero-greyscale.jpg");
     background-position: center;
@@ -384,56 +372,25 @@ button {
     color: white;
 }
 
-.location-map {
-    height: 15em;
-    margin: 1em;
-    background-image: url("../public/map.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border: 1px solid rgba(33, 150, 243, 100%);
-    border-radius: 2px;
-}
-
-.contact-info {
-    margin: 1em;
-}
-
-.contact-detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 85%;
-    margin: 3px;
-}
-
-.contact-icons {
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
-
 /* Site Footer styles */
 
 .grid-footer {
-    height: 2em;
-    margin: 1em;
-    justify-content: end;
-    bottom: 0;
+    justify-content: flex-end;
+    margin-top: 1em;
+    margin-bottom: 0.1em;
 }
 
 .flex-footer {
-    flex-direction: row;
-    margin: 1em;
+    justify-content: flex-end;
+    margin-top: 1em;
+    margin-bottom: 0.1em;
 }
 
 .footer-content {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .footer-logo {
@@ -442,6 +399,7 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-right: 0.5em;
     width: 2em;
     height: 2em;
 }
@@ -527,10 +485,6 @@ button {
     }
 
     /* Index page styles */
-    
-    .home-pg-bg {
-        background-image: url("../public/scenic-rock-greyscale2.jpg");
-    }
 
     .index-about-me {
         align-items: flex-start;
@@ -599,27 +553,7 @@ button {
     .email-form-container {
         grid-row: 1 / span 2;   
     }
-    
-    .location-map {
-        grid-column: 5 / span 4;
-        grid-row: 1 / span 2;
-    }
-    
-    .contact-info {
-        grid-column: 3 / span 4;
-        grid-row: 3 / span 2;
-    }
-    
-    .contact-detail {
-        margin: 5px;
-    }
-    
-    .contact-icons {
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-
+   
     /* Footer styles */
 
     .grid-footer {
@@ -668,10 +602,6 @@ button {
     }
 
     /* Index page styles */
-    
-    .home-pg-bg {
-        background-image: url("../public/scenic-rock-greyscale2.jpg");
-    }
     
     .main-heading {
         font-size: 40px;
@@ -751,23 +681,5 @@ button {
         grid-column: 1 / span 4;
         grid-row: 1 / span 4;
         padding: 1em;  
-    }
-
-    .location-map {
-        grid-column: 9 / span 4;
-        grid-row: 1 / span 4; 
-    }
-
-    .contact-info {
-        grid-column: 5 / span 4;
-        grid-row: 1 / span 4; 
-    }
-
-    .contact-detail {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        margin: 5px;
     }
 }

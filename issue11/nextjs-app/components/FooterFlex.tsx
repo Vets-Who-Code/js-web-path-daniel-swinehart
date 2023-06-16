@@ -9,7 +9,7 @@ export default function FooterFlex() {
                 <div className="footer-logo">
                     <Image src="danielLogoRnd.svg" alt="Site Logo" fill={true} />
                 </div>
-                <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
+                <p><small>&copy; 2023 Daniel Swinehart</small></p>
             </div>
         </footer>
     </>

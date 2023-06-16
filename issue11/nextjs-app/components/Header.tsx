@@ -28,8 +28,8 @@ export default function Header() {
           {dropDown === "display" && (
             <div className="nav-btn-container">
             <Link href="/about" className="nav-btn-container__link about-page">About</Link>
-            <Link href="projects.html" className="nav-btn-container__link project-page">Projects</Link>
-            <Link href="contact.html" className="nav-btn-container__link contact-page">Contact</Link>
+            <Link href="/projects" className="nav-btn-container__link project-page">Projects</Link>
+            <Link href="/contact" className="nav-btn-container__link contact-page">Contact</Link>
           </div>
           )}
         </div>

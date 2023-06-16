@@ -52,22 +52,8 @@ export default function Projects() {
                     <button name="submit">Submit</button>
                 </form>
             </div>
-            <div className="grid-item location-map div--bg-grey">
+            <div className="grid-item location-map">
             </div>
-            <address className="grid-item contact-info">
-                <div className="contact-detail">
-                    <img className="contact-icons" src="../public/location-dot-solid.svg"/>
-                    <p>146 Blvd Moulay Abdellah Cherif<br/>Casablanca, Morocco 20250</p>
-                </div>
-                <div className="contact-detail">
-                    <img className="contact-icons" src="../public/envelope-solid.svg"/>
-                    <p>d4570s@gmail.com</p>
-                </div>
-                <div className="contact-detail">
-                    <img className="contact-icons" src="../public/phone-solid.svg"/>
-                    <p>+212 06 93 62 68 12</p>
-                </div>
-            </address>
         </section>
         {/*Footer section*/}
         <FooterFlex />
