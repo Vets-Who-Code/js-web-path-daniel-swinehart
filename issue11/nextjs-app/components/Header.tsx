@@ -18,7 +18,7 @@ export default function Header() {
       <nav className="nav-bar">
         <div className="logo-container">
           <Link className="home-logo-link" href="/">
-            <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
+            <Image src="danielLogoRnd.svg" alt="Site Logo" fill={true} />
           </Link>
         </div>
         <div className="mobile-menu-container">
@@ -37,7 +37,7 @@ export default function Header() {
       <nav className="nav-bar-lg">
         <div className="logo-container">
           <Link href="/">
-            <Image src="danielLogo.svg" alt="Site Logo" width={100} height={100} />
+            <Image src="danielLogoRnd.svg" alt="Site Logo" width={100} height={100} />
           </Link>
         </div>
         <div className="nav-btn-container">

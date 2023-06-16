@@ -1,37 +1,35 @@
-import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import FooterFlex from '../components/FooterFlex';
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Projects() {
     
   return (
     <>
-    <main className="page-content flex-container">
-        <div className="grid-container grid-container--8x3 grid-container--12x4 contact-pg-hero">
+    <main className="page-content flex-container contact-page">
+        <div className="grid-container grid-container--8x3 grid-container--12x4 contact-pg-hero contact-page">
             <Header />
             {/*Contact Hero/Social Media Section*/}
             <div className="grid-item contact-heading-container">
                 <h1 className="contact-heading">CONTACT ME</h1>
             </div>
             <div className="grid-item social-links-container">
-                <a href="#">
-                    <img className="social-link-img" src="../public/github-icon.svg"/>
-                </a>
-                <a href="#">
-                    <img className="social-link-img" src="../public/linkedIn-icon.png"/>
-                </a>
-                <a href="#">
-                    <img className="social-link-img" src="../public/twitter-icon.svg"/>
-                </a>
-                <a href="#">
-                    <img className="social-link-img" src="../public/instagram-icon.svg"/>
-                </a>
-                <a href="#">
-                    <img className="social-link-img" src="../public/facebook-icon.png"/>
-                </a>
+                <Link className="social-icon-container" href="#">
+                    <Image src="/github-icon.svg" alt="GitHub" fill={true} />
+                </Link>
+                <Link className="social-icon-container" href="#">
+                    <Image src="/linkedIn-icon.png" alt="LinkedIn" fill={true} />
+                </Link>
+                <Link className="social-icon-container" href="#">
+                    <Image src="/twitter-icon.svg" alt="Twitter" fill={true} />
+                </Link>
+                <Link className="social-icon-container" href="#">
+                    <Image src="/instagram-icon.svg" alt="Instagram" fill={true} />
+                </Link>
+                <Link className="social-icon-container" href="#">
+                    <Image src="/facebook-icon.png" alt="Facebook" fill={true} />
+                </Link>
             </div>
         </div>
         {/*Bottom Contact/Email form/Map*/}

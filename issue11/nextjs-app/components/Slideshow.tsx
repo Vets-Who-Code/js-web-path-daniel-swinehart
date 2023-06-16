@@ -11,7 +11,7 @@ export default function Slideshow() {
         "/slideshow/imgThree.jpg",
         "/slideshow/imgFour.jpg",
         "/slideshow/imgFive.jpg",
-        "/slideshow/imgSix.jpg",
+        "/slideshow/imgSix.jpeg",
     ];
 
     setTimeout(changeSlides, 4000);

@@ -1,15 +1,11 @@
-import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import FooterFlex from '../components/FooterFlex';
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Projects() {
     
   return (
     <>
-    <main className="page-content flex-container">
+    <main className="page-content flex-container project-page">
         <div className="grid-container grid-container--8x5 grid-container--12x4 project-pg-hero">
             <Header />
             {/*Projects Summary Section*/}

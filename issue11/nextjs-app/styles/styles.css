@@ -88,7 +88,7 @@ button {
     align-items: center;
     width: 100%;
     height: 2em;
-    background-color: rgba(33, 150, 243, 100%);
+    background-color: #0C7489;
     z-index: 1;
 }
 
@@ -157,7 +157,7 @@ button {
     align-items: center;
     width: 5em;
     height: 8em;
-    background-color: rgba(33, 150, 243, 100%);
+    background-color: #0C7489;
     border-radius: 0px 0px 0px 2px;
 }
 
@@ -170,8 +170,11 @@ button {
 }
 /*Used to highlight nav-bar current page*/
 .about-page .nav-bar .nav-btn-container .about-page,
+.about-page .nav-bar-lg .nav-btn-container .about-page,
 .project-page .nav-bar .nav-btn-container .project-page,
-.contact-page .nav-bar .nav-btn-container .contact-page {
+.project-page .nav-bar-lg .nav-btn-container .project-page,
+.contact-page .nav-bar .nav-btn-container .contact-page,
+.contact-page .nav-bar-lg .nav-btn-container .contact-page {
     border-bottom: 3px solid white;
 }
 
@@ -206,20 +209,6 @@ button {
     text-align: left;
     margin-top: 2em;
     padding: 1em;
-}
-
-.twitter-feed {
-    display: flex;
-    width: 100%;
-    height: 12em;
-    margin-top: 2em;
-    margin-bottom: 4em;
-}
-
-.twitter-timeline {
-    width: 100%;
-    overflow: auto;
-    border-radius: 12px;
 }
 
 /* Projects page styles */
@@ -360,18 +349,19 @@ button {
     margin-bottom: 1em;
 }
 
-.icon-bg-linkedin {
+.social-icon-container {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 2.025em;
-    height: 1.69em;
-    background-color: white;
-    border-radius: 2.2px;
+    position: relative;
+    width: 2em;
+    height: 2.5em;
 }
 
-.social-link-img {
-    width: 2em;
+
+.social-icon-container img {
+    object-fit: contain;
 }
 
 .email-form-container {
@@ -468,7 +458,7 @@ button {
         Display: flex;
         grid-column: 1 / span 8;
         grid-row: 1 / span 1;
-        align-items: center;
+        align-items: flex-start;
         height: auto;
     }
 
@@ -479,10 +469,10 @@ button {
     .nav-bar-lg {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
-        margin: 2em;
-        background-color: rgba(33, 150, 243, 0%);
+        margin: 0;
+        background-color: none;
         z-index: 1;
     }
     
@@ -495,7 +485,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.2em;
+        margin: 0.5em;
         width: 6em;
         height: 6em;
     }
@@ -508,7 +498,7 @@ button {
         width: 14em;
         height: 2em;
         margin-left: 3em;
-        background-color: rgba(33, 150, 243, 100%);
+        background-color: #0C7489;
         border-radius: 2px;
     }
     
@@ -547,12 +537,6 @@ button {
         grid-column: 2 / span 4;
         grid-row: 2 / span 2;
         margin: 0;
-    }
-
-    .twitter-feed {
-        height: 10em;
-        margin-top: 2em;
-        margin-bottom: 0;
     }
 
     /* Projects page styles */
@@ -660,7 +644,7 @@ button {
     }
 
     .nav-bar-lg {
-        margin: 3em;
+        margin: 0;
         background-color: rgba(33, 150, 243, 0%);
     }
 
@@ -704,10 +688,6 @@ button {
     .text-summary {
         font-size: 1em;
         text-align: left;
-    }
-
-    .twitter-feed {
-        height: 20em;
     }
 
     /* Projects page styles */

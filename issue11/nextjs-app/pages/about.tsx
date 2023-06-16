@@ -1,16 +1,12 @@
-import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import FooterGrid from '../components/FooterGrid';
 import Slideshow from '../components/Slideshow';
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
     
   return (
     <>
-    <main className="page-content grid-container grid-container--8x4 grid-container--12x5 about-pg-bg">
+    <main className="page-content grid-container grid-container--8x4 grid-container--12x5 about-pg-bg about-page">
         <Header />
         {/*About Me Section*/}
         <section className="grid-item grid-item-profile">

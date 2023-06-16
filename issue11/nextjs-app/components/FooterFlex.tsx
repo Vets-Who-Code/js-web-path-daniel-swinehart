@@ -7,7 +7,7 @@ export default function FooterFlex() {
     <footer className="flex-container flex-footer">
             <div className="footer-content">
                 <div className="footer-logo">
-                    <Image src="danielLogo.svg" alt="Site Logo" fill={true} />
+                    <Image src="danielLogoRnd.svg" alt="Site Logo" fill={true} />
                 </div>
                 <p><small>Copyright &copy 2023 Daniel Swinehart</small></p>
             </div>
